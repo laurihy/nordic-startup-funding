@@ -10,7 +10,6 @@ PATH_TO_ORGANIZATIONS = 'organizations_map.json'
 PATH_TO_COMPANY_PROFILES = 'company_profiles.json'
 PATH_TO_FUNDING_ROUNDS = 'funding_rounds.json'
 
-
 NORDIC_COUNTRY_CODES = ['FIN', 'SWE', 'EST', 'LIE', 'LTU','NOR', 'DMA']
 
 BASE_URL = 'https://api.crunchbase.com/v/2/'
@@ -51,6 +50,8 @@ def coerce_values_to_ascii(obj):
     for k, v in obj.items():
         if isinstance(v, unicode):
             ret[k] = v.encode('ascii', 'ignore')
+        if isinstance(v, list):
+            ret[k] = ', '.join([i.encode('ascii', 'ignore') for i in v])
         else:
             ret[k] = v
     return ret
@@ -138,16 +139,21 @@ def companies_into_funding_rounds(companies, funding_rounds):
 
 
 
-def build_basic_dataset(funding_rounds):
+
+def build_dataset(funding_rounds):
     ret = []
     for r in funding_rounds:
         company_data = r['data']['relationships']['funded_organization']['items'][0]['company']
         ret.append({
             'date': r['data']['properties']['announced_on'],
             'company_name': company_data['data']['properties']['name'],
-            'company_country': company_data['organization']['location_country_code'],
-            'company_founded': company_data['data']['properties'].get('founded_on', ''),
+            'company_location_country': company_data['organization']['location_country_code'],
+            'company_location_city': company_data['organization'].get('location_city',''),
+            'company_founders': [i.get('name','') for i in company_data['data']['relationships'].get('founders', {}).get('items',[])],
+            'company_categories': [i.get('name','') for i in company_data['data']['relationships'].get('categories', {}).get('items',[])],
+            'company_founded_on': company_data['data']['properties'].get('founded_on', ''),
             'funding_size_usd': r['data']['properties'].get('money_raised_usd',''),
             'series': r['data']['properties'].get('series',''),
+            'investors': [i['investor'].get('name','') for i in r['data']['relationships'].get('investments', {}).get('items',[])],
         })
     return ret
