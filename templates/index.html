@@ -91,6 +91,12 @@
             width: 100000px;
         }
 
+        .holder h3 {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
         div.content {
             display: inline-block;
         }
@@ -128,11 +134,14 @@
 
         $('document').ready(function(){
             $('.mean, .total').each(function(){ $(this).text(formatUSD($(this).text())); })
-            var holderWidth = 0;
-            $('.holder').children().each(function(){
-                holderWidth += $(this).outerWidth()+10;
-            })
-            $('.holder').css('width', holderWidth+'px')
+
+            $('.holder').each(function(){
+                var holderWidth = 0;
+                $(this).children().each(function(){
+                    holderWidth += $(this).outerWidth()+10;
+                })
+                $(this).css('width', holderWidth+'px')
+            });
         })
 
 
@@ -170,14 +179,36 @@
         <div class="table-container">
             <div class="holder">
                 <div class="content" id="all">
-                    <h3 style="text-align: center;">All countries</h3>
+                    <h3>All countries</h3>
                     {{partial('toplist.html', x_axis=x_axis['countries'], data=top_investors, count=10)}}
                 </div>
                 {% for country in x_axis['countries'] %}
                     {% if country != 'LIE' %}
                     <div class="content" id="{{country}}">
-                        <h3 style="text-align: center;">{{country}}</h3>
+                        <h3>{{country}}</h3>
                         {{partial('toplist.html', x_axis=x_axis['years'], data=top_investors[country]['children'], count=10)}}
+                    </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text">
+            <h2>Top categories for investments, both for all countries and by country</h2>
+        </div>
+        <div class="table-container">
+            <div class="holder">
+                <div class="content" id="all">
+                    <h3>All countries</h3>
+                    {{partial('toplist.html', x_axis=x_axis['countries'], data=top_categories, count=10)}}
+                </div>
+                {% for country in x_axis['countries'] %}
+                    {% if country != 'LIE' %}
+                    <div class="content" id="{{country}}">
+                        <h3>{{country}}</h3>
+                        {{partial('toplist.html', x_axis=x_axis['years'], data=top_categories[country]['children'], count=10)}}
                     </div>
                     {% endif %}
                 {% endfor %}

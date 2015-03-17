@@ -5,6 +5,7 @@ import pystache
 import pprint
 from jinja2 import Environment, FileSystemLoader
 
+pretty = pprint.PrettyPrinter(indent=4).pprint
 
 from data import DATA
 
@@ -49,6 +50,9 @@ def get_data_by_company_name(data):
 def get_data_by_investor(data):
     return group_by(data, fn=lambda x: x.get('investors'))
 
+def get_data_by_category(data):
+    return group_by(data, fn=lambda x: x.get('company_categories'))
+
 def get_data_by_founders(data):
     return group_by(data, fn=lambda x: x.get('company_founders'))
 
@@ -60,6 +64,8 @@ def get_data_by_city(data):
 
 def get_data_by_series(data):
     return group_by(data, fn=lambda x: (x.get('series') or 'Unknown').upper())
+
+
 
 def index_by(arr, fn):
     ret = {}
@@ -144,6 +150,11 @@ by_year_and_location = build_table(DATA, [
 top_investors_by_location_and_year = build_table(DATA, [
     (get_data_by_country, get_values_split_by(get_data_by_investor), top_10_by_count),
     (get_data_by_year, get_values_split_by(get_data_by_investor), top_10_by_count),
+])
+
+top_categories_by_location_and_year = build_table(DATA, [
+    (get_data_by_country, get_values_split_by(get_data_by_category), top_10_by_count),
+    (get_data_by_year, get_values_split_by(get_data_by_category), top_10_by_count),
 ])
 
 top_companies_by_location = build_table(DATA, [

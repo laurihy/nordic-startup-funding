@@ -91,6 +91,12 @@
             width: 100000px;
         }
 
+        .holder h3 {
+            margin-left: 10px;
+            font-size: 18px;
+            font-weight: normal;
+        }
+
         div.content {
             display: inline-block;
         }
@@ -128,11 +134,14 @@
 
         $('document').ready(function(){
             $('.mean, .total').each(function(){ $(this).text(formatUSD($(this).text())); })
-            var holderWidth = 0;
-            $('.holder').children().each(function(){
-                holderWidth += $(this).outerWidth()+10;
-            })
-            $('.holder').css('width', holderWidth+'px')
+
+            $('.holder').each(function(){
+                var holderWidth = 0;
+                $(this).children().each(function(){
+                    holderWidth += $(this).outerWidth()+10;
+                })
+                $(this).css('width', holderWidth+'px')
+            });
         })
 
 
@@ -1272,7 +1281,7 @@
         <div class="table-container">
             <div class="holder">
                 <div class="content" id="all">
-                    <h3 style="text-align: center;">All countries</h3>
+                    <h3>All countries</h3>
                     <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -1788,7 +1797,7 @@
                 
                     
                     <div class="content" id="EST">
-                        <h3 style="text-align: center;">EST</h3>
+                        <h3>EST</h3>
                         <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -2585,7 +2594,7 @@
                 
                     
                     <div class="content" id="FIN">
-                        <h3 style="text-align: center;">FIN</h3>
+                        <h3>FIN</h3>
                         <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -3640,7 +3649,7 @@
                 
                     
                     <div class="content" id="LTU">
-                        <h3 style="text-align: center;">LTU</h3>
+                        <h3>LTU</h3>
                         <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -4405,7 +4414,7 @@
                 
                     
                     <div class="content" id="NOR">
-                        <h3 style="text-align: center;">NOR</h3>
+                        <h3>NOR</h3>
                         <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -5446,7 +5455,7 @@
                 
                     
                     <div class="content" id="SWE">
-                        <h3 style="text-align: center;">SWE</h3>
+                        <h3>SWE</h3>
                         <div class="table-container">
     <table class="toplist" cellspacing="0" cellpadding="0">
         <tr>
@@ -6547,6 +6556,5606 @@
                             <span class="name">Broadfin Capital</span>
                             <span class="count">1</span>
                             <span class="total">27500000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                    </div>
+                    
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="text">
+            <h2>Top categories for investments, both for all countries and by country</h2>
+        </div>
+        <div class="table-container">
+            <div class="holder">
+                <div class="content" id="all">
+                    <h3>All countries</h3>
+                    <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>EST</th>
+            
+                <th>FIN</th>
+            
+                <th>LIE</th>
+            
+                <th>LTU</th>
+            
+                <th>NOR</th>
+            
+                <th>SWE</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">20</span>
+                            <span class="total">29346991</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">58</span>
+                            <span class="total">104898114</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">1</span>
+                            <span class="total">7500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">14</span>
+                            <span class="total">34466408</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">36</span>
+                            <span class="total">70679543</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">73</span>
+                            <span class="total">380500755</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">10</span>
+                            <span class="total">12263892</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">40</span>
+                            <span class="total">84040746</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">9</span>
+                            <span class="total">33007998</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">16</span>
+                            <span class="total">28006687</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">60</span>
+                            <span class="total">144951416</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td>
+                            <span class="name">B2B</span>
+                            <span class="count">8</span>
+                            <span class="total">3131600</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">35</span>
+                            <span class="total">271553652</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">7</span>
+                            <span class="total">874438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">14</span>
+                            <span class="total">7010523</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">44</span>
+                            <span class="total">597915476</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">6</span>
+                            <span class="total">154112</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">19</span>
+                            <span class="total">7384472</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">5</span>
+                            <span class="total">322438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">13</span>
+                            <span class="total">135990077</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">36</span>
+                            <span class="total">208911307</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td>
+                            <span class="name">Startups</span>
+                            <span class="count">6</span>
+                            <span class="total">2153315</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">18</span>
+                            <span class="total">45974453</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">5</span>
+                            <span class="total">32742880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">11</span>
+                            <span class="total">13755071</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">31</span>
+                            <span class="total">142719969</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td>
+                            <span class="name">Small and Medium Businesses</span>
+                            <span class="count">5</span>
+                            <span class="total">145000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">17</span>
+                            <span class="total">14663201</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">5</span>
+                            <span class="total">699859</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">10</span>
+                            <span class="total">11940000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">30</span>
+                            <span class="total">79244201</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td>
+                            <span class="name">Human Resources</span>
+                            <span class="count">5</span>
+                            <span class="total">1136602</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">15</span>
+                            <span class="total">21693497</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">5</span>
+                            <span class="total">548656</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">10</span>
+                            <span class="total">3112094</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">29</span>
+                            <span class="total">361233391</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td>
+                            <span class="name">Social Media Management</span>
+                            <span class="count">5</span>
+                            <span class="total">145000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">15</span>
+                            <span class="total">126277501</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Peer-to-Peer</span>
+                            <span class="count">4</span>
+                            <span class="total">32592880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">9</span>
+                            <span class="total">10454280</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">29</span>
+                            <span class="total">193028589</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td>
+                            <span class="name">Promotional</span>
+                            <span class="count">5</span>
+                            <span class="total">145000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Messaging</span>
+                            <span class="count">14</span>
+                            <span class="total">141668647</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">4</span>
+                            <span class="total">530000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">8</span>
+                            <span class="total">324257250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">23</span>
+                            <span class="total">48789290</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">5</span>
+                            <span class="total">8299186</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">13</span>
+                            <span class="total">6579161</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Business Services</span>
+                            <span class="count">4</span>
+                            <span class="total">1499859</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">8</span>
+                            <span class="total">14141224</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">22</span>
+                            <span class="total">70074330</span>
+                        </td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                </div>
+                
+                    
+                    <div class="content" id="EST">
+                        <h3>EST</h3>
+                        <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>2002</th>
+            
+                <th>2003</th>
+            
+                <th>2004</th>
+            
+                <th>2005</th>
+            
+                <th>2006</th>
+            
+                <th>2007</th>
+            
+                <th>2008</th>
+            
+                <th>2009</th>
+            
+                <th>2010</th>
+            
+                <th>2011</th>
+            
+                <th>2012</th>
+            
+                <th>2013</th>
+            
+                <th>2014</th>
+            
+                <th>2015</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">1320000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photography</span>
+                            <span class="count">1</span>
+                            <span class="total">131350</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Design</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Consumer Lending</span>
+                            <span class="count">1</span>
+                            <span class="total">107475</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Game</span>
+                            <span class="count">2</span>
+                            <span class="total">81438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">259576</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">B2B</span>
+                            <span class="count">5</span>
+                            <span class="total">2351600</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">7</span>
+                            <span class="total">7632885</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Consumer Lending</span>
+                            <span class="count">1</span>
+                            <span class="total">5075455</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">1</span>
+                            <span class="total">2000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Video</span>
+                            <span class="count">1</span>
+                            <span class="total">131350</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Public Relations</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Training</span>
+                            <span class="count">1</span>
+                            <span class="total">257000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">FreetoPlay Gaming</span>
+                            <span class="count">2</span>
+                            <span class="total">81438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Training</span>
+                            <span class="count">1</span>
+                            <span class="total">249576</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">4</span>
+                            <span class="total">10079611</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">4</span>
+                            <span class="total">424305</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Reviews and Recommendations</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">1</span>
+                            <span class="total">123000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">131350</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Testing</span>
+                            <span class="count">1</span>
+                            <span class="total">315380</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">1</span>
+                            <span class="total">107475</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">2</span>
+                            <span class="total">81438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Training</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Network Media</span>
+                            <span class="count">1</span>
+                            <span class="total">249576</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">4</span>
+                            <span class="total">11060000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">4</span>
+                            <span class="total">2174281</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Shoes</span>
+                            <span class="count">1</span>
+                            <span class="total">17063</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Hosting</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Teachers</span>
+                            <span class="count">1</span>
+                            <span class="total">257000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Business Services</span>
+                            <span class="count">2</span>
+                            <span class="total">81438</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">1</span>
+                            <span class="total">57952</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Publishing</span>
+                            <span class="count">1</span>
+                            <span class="total">40000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Startups</span>
+                            <span class="count">4</span>
+                            <span class="total">1467792</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Small and Medium Businesses</span>
+                            <span class="count">2</span>
+                            <span class="total">80000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Human Resources</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Pets</span>
+                            <span class="count">1</span>
+                            <span class="total">270776</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Pets</span>
+                            <span class="count">1</span>
+                            <span class="total">670512</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">8990800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Online Dating</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">10000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Small and Medium Businesses</span>
+                            <span class="count">3</span>
+                            <span class="total">65000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Human Resources</span>
+                            <span class="count">2</span>
+                            <span class="total">846602</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photo Editing</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Network Media</span>
+                            <span class="count">1</span>
+                            <span class="total">257000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Digital Media</span>
+                            <span class="count">1</span>
+                            <span class="total">10000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media Management</span>
+                            <span class="count">3</span>
+                            <span class="total">65000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media Management</span>
+                            <span class="count">2</span>
+                            <span class="total">80000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">B2B</span>
+                            <span class="count">1</span>
+                            <span class="total">700000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Development</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">257000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Consumer Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">1</span>
+                            <span class="total">12273</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">3</span>
+                            <span class="total">60401</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Social</span>
+                            <span class="count">2</span>
+                            <span class="total">378615</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">700000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">315380</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Human Resources</span>
+                            <span class="count">1</span>
+                            <span class="total">90000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">1</span>
+                            <span class="total">25000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">3</span>
+                            <span class="total">65000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Promotional</span>
+                            <span class="count">2</span>
+                            <span class="total">80000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Fashion</span>
+                            <span class="count">1</span>
+                            <span class="total">17063</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Education</span>
+                            <span class="count">1</span>
+                            <span class="total">40000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Promotional</span>
+                            <span class="count">3</span>
+                            <span class="total">65000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">B2B</span>
+                            <span class="count">2</span>
+                            <span class="total">80000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Women</span>
+                            <span class="count">1</span>
+                            <span class="total">17063</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Task Management</span>
+                            <span class="count">1</span>
+                            <span class="total">90000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Teachers</span>
+                            <span class="count">1</span>
+                            <span class="total">249576</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Language Learning</span>
+                            <span class="count">2</span>
+                            <span class="total">83000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Fleet Management</span>
+                            <span class="count">2</span>
+                            <span class="total">1839281</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Personal Health</span>
+                            <span class="count">1</span>
+                            <span class="total">17063</span>
+                        </td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                    </div>
+                    
+                
+                    
+                    <div class="content" id="FIN">
+                        <h3>FIN</h3>
+                        <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>2002</th>
+            
+                <th>2003</th>
+            
+                <th>2004</th>
+            
+                <th>2005</th>
+            
+                <th>2006</th>
+            
+                <th>2007</th>
+            
+                <th>2008</th>
+            
+                <th>2009</th>
+            
+                <th>2010</th>
+            
+                <th>2011</th>
+            
+                <th>2012</th>
+            
+                <th>2013</th>
+            
+                <th>2014</th>
+            
+                <th>2015</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Energy</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health Care</span>
+                            <span class="count">1</span>
+                            <span class="total">6230000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">5720000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Entertainment</span>
+                            <span class="count">2</span>
+                            <span class="total">3524025</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">3</span>
+                            <span class="total">14240000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">3</span>
+                            <span class="total">1244250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">6</span>
+                            <span class="total">15531120</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">6</span>
+                            <span class="total">58640000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">11</span>
+                            <span class="total">4473513</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">14</span>
+                            <span class="total">30432114</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">18</span>
+                            <span class="total">34446244</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Travel</span>
+                            <span class="count">2</span>
+                            <span class="total">3257633</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Renewable Energies</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">1</span>
+                            <span class="total">1882200</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health Care</span>
+                            <span class="count">2</span>
+                            <span class="total">6206920</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">2</span>
+                            <span class="total">2693025</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">3</span>
+                            <span class="total">56091600</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">3</span>
+                            <span class="total">16171700</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">5</span>
+                            <span class="total">3952420</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">4</span>
+                            <span class="total">1580492</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">5</span>
+                            <span class="total">582431</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">8</span>
+                            <span class="total">34970257</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">10</span>
+                            <span class="total">52516377</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Automotive</span>
+                            <span class="count">2</span>
+                            <span class="total">7881937</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">1964000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">3663750</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Weddings</span>
+                            <span class="count">2</span>
+                            <span class="total">50612000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">4260000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">3</span>
+                            <span class="total">2032085</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Messaging</span>
+                            <span class="count">4</span>
+                            <span class="total">19070500</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">5</span>
+                            <span class="total">1214809</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">6</span>
+                            <span class="total">4760262</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">9</span>
+                            <span class="total">28679361</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">6999473</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Kids</span>
+                            <span class="count">1</span>
+                            <span class="total">8200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">App Marketing</span>
+                            <span class="count">2</span>
+                            <span class="total">50612000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">3234250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">3</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Manufacturing</span>
+                            <span class="count">3</span>
+                            <span class="total">32200470</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">5</span>
+                            <span class="total">6370000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">5</span>
+                            <span class="total">3376219</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">9</span>
+                            <span class="total">7826375</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">5066619</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Entertainment</span>
+                            <span class="count">1</span>
+                            <span class="total">8200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Messaging</span>
+                            <span class="count">2</span>
+                            <span class="total">50612000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">382890</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Recruiting</span>
+                            <span class="count">2</span>
+                            <span class="total">135683</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">3</span>
+                            <span class="total">2306400</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">4</span>
+                            <span class="total">1705711</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">5</span>
+                            <span class="total">6508544</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">6</span>
+                            <span class="total">7144360</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Billing</span>
+                            <span class="count">1</span>
+                            <span class="total">1677083</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">1</span>
+                            <span class="total">7700000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SMS</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Interface Design</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Games</span>
+                            <span class="count">1</span>
+                            <span class="total">1110000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">2</span>
+                            <span class="total">4294400</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Information Technology</span>
+                            <span class="count">3</span>
+                            <span class="total">1590492</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Android</span>
+                            <span class="count">4</span>
+                            <span class="total">1705711</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">5</span>
+                            <span class="total">141890000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Games</span>
+                            <span class="count">6</span>
+                            <span class="total">40914372</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Small and Medium Businesses</span>
+                            <span class="count">1</span>
+                            <span class="total">1677083</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Weddings</span>
+                            <span class="count">1</span>
+                            <span class="total">35391000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">2524025</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">1</span>
+                            <span class="total">1557700</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">MMO Games</span>
+                            <span class="count">1</span>
+                            <span class="total">1110000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">2</span>
+                            <span class="total">8128040</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">3</span>
+                            <span class="total">1937537</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">iPhone</span>
+                            <span class="count">4</span>
+                            <span class="total">1705711</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">3</span>
+                            <span class="total">588000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">6</span>
+                            <span class="total">6165825</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Freelancers</span>
+                            <span class="count">1</span>
+                            <span class="total">1677083</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">App Marketing</span>
+                            <span class="count">1</span>
+                            <span class="total">35391000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Messaging</span>
+                            <span class="count">1</span>
+                            <span class="total">2524025</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Assisitive Technology</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Virtual Goods</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">2</span>
+                            <span class="total">21992196</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Games</span>
+                            <span class="count">2</span>
+                            <span class="total">44500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">4</span>
+                            <span class="total">5431310</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Crowdsourcing</span>
+                            <span class="count">3</span>
+                            <span class="total">11037300</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">4</span>
+                            <span class="total">4316138</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising Networks</span>
+                            <span class="count">1</span>
+                            <span class="total">796139</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">1</span>
+                            <span class="total">35391000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Tourism</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">1</span>
+                            <span class="total">7424000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">1</span>
+                            <span class="total">6617250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">1</span>
+                            <span class="total">71683</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">2</span>
+                            <span class="total">940492</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">4</span>
+                            <span class="total">6816675</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photography</span>
+                            <span class="count">3</span>
+                            <span class="total">11037300</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Payments</span>
+                            <span class="count">4</span>
+                            <span class="total">864968</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">1</span>
+                            <span class="total">550000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">1</span>
+                            <span class="total">8200000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Project Management</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Content</span>
+                            <span class="count">1</span>
+                            <span class="total">134250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Publishing</span>
+                            <span class="count">1</span>
+                            <span class="total">230496</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Analytics</span>
+                            <span class="count">2</span>
+                            <span class="total">2365650</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Events</span>
+                            <span class="count">3</span>
+                            <span class="total">151231</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">News</span>
+                            <span class="count">3</span>
+                            <span class="total">11037300</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">4</span>
+                            <span class="total">830062</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Crowdsourcing</span>
+                            <span class="count">1</span>
+                            <span class="total">410000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                    </div>
+                    
+                
+                    
+                
+                    
+                    <div class="content" id="LTU">
+                        <h3>LTU</h3>
+                        <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>2002</th>
+            
+                <th>2003</th>
+            
+                <th>2004</th>
+            
+                <th>2005</th>
+            
+                <th>2006</th>
+            
+                <th>2007</th>
+            
+                <th>2008</th>
+            
+                <th>2009</th>
+            
+                <th>2010</th>
+            
+                <th>2011</th>
+            
+                <th>2012</th>
+            
+                <th>2013</th>
+            
+                <th>2014</th>
+            
+                <th>2015</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Business Analytics</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Networking</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Security</span>
+                            <span class="count">1</span>
+                            <span class="total">28100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Online Scheduling</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Manufacturing</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">3</span>
+                            <span class="total">215118</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">4</span>
+                            <span class="total">7860880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">4</span>
+                            <span class="total">25932000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Business Services</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">140000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Social</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Beauty</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">3</span>
+                            <span class="total">83528</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">3</span>
+                            <span class="total">436254</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">3</span>
+                            <span class="total">25932000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Document Management</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Travel</span>
+                            <span class="count">2</span>
+                            <span class="total">65118</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">3</span>
+                            <span class="total">736254</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">2</span>
+                            <span class="total">25732000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Usability</span>
+                            <span class="count">1</span>
+                            <span class="total">1000000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Data Centers</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Automotive</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">2</span>
+                            <span class="total">65118</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Marketplaces</span>
+                            <span class="count">2</span>
+                            <span class="total">6860880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Buying</span>
+                            <span class="count">2</span>
+                            <span class="total">25732000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Hosting</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Reviews and Recommendations</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Transportation</span>
+                            <span class="count">2</span>
+                            <span class="total">65118</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">2</span>
+                            <span class="total">6860880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">52000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Social</span>
+                            <span class="count">1</span>
+                            <span class="total">200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">65118</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Corporate Training</span>
+                            <span class="count">2</span>
+                            <span class="total">236254</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">2</span>
+                            <span class="total">263605</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile Social</span>
+                            <span class="count">1</span>
+                            <span class="total">140000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Startups</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">B2B</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">2</span>
+                            <span class="total">14242</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Business Services</span>
+                            <span class="count">2</span>
+                            <span class="total">236254</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Peer-to-Peer</span>
+                            <span class="count">2</span>
+                            <span class="total">25732000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprises</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Telecommunications</span>
+                            <span class="count">2</span>
+                            <span class="total">398410</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Buying</span>
+                            <span class="count">2</span>
+                            <span class="total">6860880</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Commerce</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Analytics</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Private Social Networking</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">2</span>
+                            <span class="total">25020395</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Music</span>
+                            <span class="count">1</span>
+                            <span class="total">273453</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Incubators</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SMS</span>
+                            <span class="count">1</span>
+                            <span class="total">18410</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">757320</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Cosmetics</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                    </div>
+                    
+                
+                    
+                    <div class="content" id="NOR">
+                        <h3>NOR</h3>
+                        <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>2002</th>
+            
+                <th>2003</th>
+            
+                <th>2004</th>
+            
+                <th>2005</th>
+            
+                <th>2006</th>
+            
+                <th>2007</th>
+            
+                <th>2008</th>
+            
+                <th>2009</th>
+            
+                <th>2010</th>
+            
+                <th>2011</th>
+            
+                <th>2012</th>
+            
+                <th>2013</th>
+            
+                <th>2014</th>
+            
+                <th>2015</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">8700000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Search</span>
+                            <span class="count">1</span>
+                            <span class="total">159000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">5</span>
+                            <span class="total">6864000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">3</span>
+                            <span class="total">44070000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Entertainment</span>
+                            <span class="count">2</span>
+                            <span class="total">10000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">8</span>
+                            <span class="total">14291060</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">3</span>
+                            <span class="total">10000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">3200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">6</span>
+                            <span class="total">9329520</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">7</span>
+                            <span class="total">5625000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">5446177</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Public Relations</span>
+                            <span class="count">1</span>
+                            <span class="total">4490000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">1</span>
+                            <span class="total">2490000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">2</span>
+                            <span class="total">1863000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">2</span>
+                            <span class="total">2600000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">2</span>
+                            <span class="total">166330000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">3</span>
+                            <span class="total">64000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">3</span>
+                            <span class="total">4549224</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">2</span>
+                            <span class="total">4639820</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">5</span>
+                            <span class="total">14489483</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">5</span>
+                            <span class="total">2025000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">2</span>
+                            <span class="total">5500000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">1</span>
+                            <span class="total">2500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">1</span>
+                            <span class="total">105790000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Content</span>
+                            <span class="count">2</span>
+                            <span class="total">6500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">News</span>
+                            <span class="count">2</span>
+                            <span class="total">2600000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">2</span>
+                            <span class="total">10000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Tracking</span>
+                            <span class="count">2</span>
+                            <span class="total">540000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">2</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Cloud Data Services</span>
+                            <span class="count">1</span>
+                            <span class="total">35000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">4</span>
+                            <span class="total">1190000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Travel</span>
+                            <span class="count">4</span>
+                            <span class="total">138000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">2</span>
+                            <span class="total">19012933</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Hosting</span>
+                            <span class="count">1</span>
+                            <span class="total">6700000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">1</span>
+                            <span class="total">159000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">2</span>
+                            <span class="total">2500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">1270000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Hosting</span>
+                            <span class="count">1</span>
+                            <span class="total">4880000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">2</span>
+                            <span class="total">840000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Home & Garden</span>
+                            <span class="count">2</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">3</span>
+                            <span class="total">3489682</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Travel</span>
+                            <span class="count">4</span>
+                            <span class="total">138000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">2</span>
+                            <span class="total">200000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">1</span>
+                            <span class="total">400000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">1</span>
+                            <span class="total">3490000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">2</span>
+                            <span class="total">17000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">2</span>
+                            <span class="total">2600000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">1</span>
+                            <span class="total">3430000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">2</span>
+                            <span class="total">8067250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">2</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Geospatial</span>
+                            <span class="count">1</span>
+                            <span class="total">40000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet of Things</span>
+                            <span class="count">3</span>
+                            <span class="total">47004520</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">4</span>
+                            <span class="total">2310000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Logistics</span>
+                            <span class="count">1</span>
+                            <span class="total">5300000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">1240000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Search</span>
+                            <span class="count">1</span>
+                            <span class="total">610000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">1</span>
+                            <span class="total">10400000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">2</span>
+                            <span class="total">20035841</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Property Management</span>
+                            <span class="count">2</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Auctions</span>
+                            <span class="count">1</span>
+                            <span class="total">200000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">3</span>
+                            <span class="total">699682</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photo Sharing</span>
+                            <span class="count">4</span>
+                            <span class="total">2025000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Consumer Electronics</span>
+                            <span class="count">1</span>
+                            <span class="total">12933</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Open Source</span>
+                            <span class="count">1</span>
+                            <span class="total">5000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Tracking</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Project Management</span>
+                            <span class="count">2</span>
+                            <span class="total">540000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Real Estate</span>
+                            <span class="count">2</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Big Data</span>
+                            <span class="count">1</span>
+                            <span class="total">35000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">3</span>
+                            <span class="total">2644280</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Edutainment</span>
+                            <span class="count">4</span>
+                            <span class="total">2025000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet of Things</span>
+                            <span class="count">1</span>
+                            <span class="total">12933</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Energy</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">1</span>
+                            <span class="total">4550000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Entertainment</span>
+                            <span class="count">1</span>
+                            <span class="total">20000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hotels</span>
+                            <span class="count">2</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Energy</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">3</span>
+                            <span class="total">2100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Online Travel</span>
+                            <span class="count">4</span>
+                            <span class="total">138000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Wearables</span>
+                            <span class="count">1</span>
+                            <span class="total">12933</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">1</span>
+                            <span class="total">744000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">1</span>
+                            <span class="total">610000</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">1</span>
+                            <span class="total">35841</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Open Source</span>
+                            <span class="count">1</span>
+                            <span class="total">4409460</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Oil & Gas</span>
+                            <span class="count">2</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Artificial Intelligence</span>
+                            <span class="count">4</span>
+                            <span class="total">645000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web CMS</span>
+                            <span class="count">1</span>
+                            <span class="total">5000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">1</span>
+                            <span class="total">0</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Big Data Analytics</span>
+                            <span class="count">1</span>
+                            <span class="total">144060</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Productivity Software</span>
+                            <span class="count">1</span>
+                            <span class="total">100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">1</span>
+                            <span class="total">3000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Analytics</span>
+                            <span class="count">2</span>
+                            <span class="total">2001911</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">3</span>
+                            <span class="total">124000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Computers</span>
+                            <span class="count">1</span>
+                            <span class="total">12933</span>
+                        </td>
+                    
+                
+            </tr>
+        
+    </table>
+</div>
+                    </div>
+                    
+                
+                    
+                    <div class="content" id="SWE">
+                        <h3>SWE</h3>
+                        <div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            
+                <th>2002</th>
+            
+                <th>2003</th>
+            
+                <th>2004</th>
+            
+                <th>2005</th>
+            
+                <th>2006</th>
+            
+                <th>2007</th>
+            
+                <th>2008</th>
+            
+                <th>2009</th>
+            
+                <th>2010</th>
+            
+                <th>2011</th>
+            
+                <th>2012</th>
+            
+                <th>2013</th>
+            
+                <th>2014</th>
+            
+                <th>2015</th>
+            
+        </tr>
+        
+            <tr>
+                <td>0</td>
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">1</span>
+                            <span class="total">150000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">1</span>
+                            <span class="total">22261405</span>
+                        </td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">3</span>
+                            <span class="total">5996000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">11</span>
+                            <span class="total">55115782</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">7</span>
+                            <span class="total">17124654</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">9</span>
+                            <span class="total">77461911</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">6</span>
+                            <span class="total">9500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">8</span>
+                            <span class="total">49905800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">8</span>
+                            <span class="total">24520241</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">16</span>
+                            <span class="total">25623868</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">10</span>
+                            <span class="total">20389084</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">11</span>
+                            <span class="total">135100000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">3</span>
+                            <span class="total">32131591</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>1</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Development Platforms</span>
+                            <span class="count">2</span>
+                            <span class="total">3750000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">3</span>
+                            <span class="total">24357800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">5</span>
+                            <span class="total">19650000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">5</span>
+                            <span class="total">11850000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">6</span>
+                            <span class="total">79710000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">8</span>
+                            <span class="total">14328927</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">6</span>
+                            <span class="total">35445561</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">10</span>
+                            <span class="total">11724205</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">6</span>
+                            <span class="total">16504469</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">9</span>
+                            <span class="total">29760540</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Online Shopping</span>
+                            <span class="count">1</span>
+                            <span class="total">40000000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>2</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">2</span>
+                            <span class="total">30448870</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health Care</span>
+                            <span class="count">3</span>
+                            <span class="total">25319204</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">5</span>
+                            <span class="total">60213144</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">5</span>
+                            <span class="total">6720000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">5</span>
+                            <span class="total">6426570</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">5</span>
+                            <span class="total">14048574</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">6</span>
+                            <span class="total">9794124</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photography</span>
+                            <span class="count">6</span>
+                            <span class="total">1540926</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">6</span>
+                            <span class="total">19847146</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">9</span>
+                            <span class="total">169123953</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Recruiting</span>
+                            <span class="count">1</span>
+                            <span class="total">3500000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>3</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Semiconductors</span>
+                            <span class="count">2</span>
+                            <span class="total">29670000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">3</span>
+                            <span class="total">6772286</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">3</span>
+                            <span class="total">1418980</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Security</span>
+                            <span class="count">5</span>
+                            <span class="total">35611010</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">3</span>
+                            <span class="total">6270000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">4</span>
+                            <span class="total">10985952</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">4</span>
+                            <span class="total">7690701</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">6</span>
+                            <span class="total">7620156</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">6</span>
+                            <span class="total">28464876</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Finance</span>
+                            <span class="count">8</span>
+                            <span class="total">47833870</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Crowdsourcing</span>
+                            <span class="count">1</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>4</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Media</span>
+                            <span class="count">1</span>
+                            <span class="total">905992</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">3</span>
+                            <span class="total">3780000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Mobile</span>
+                            <span class="count">3</span>
+                            <span class="total">516000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">4</span>
+                            <span class="total">5409282</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">3</span>
+                            <span class="total">33965686</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">4</span>
+                            <span class="total">20210500</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">4</span>
+                            <span class="total">14560873</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Startups</span>
+                            <span class="count">6</span>
+                            <span class="total">995926</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Music</span>
+                            <span class="count">5</span>
+                            <span class="total">253524320</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Apps</span>
+                            <span class="count">7</span>
+                            <span class="total">1254294</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Maps</span>
+                            <span class="count">1</span>
+                            <span class="total">1500000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>5</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">1</span>
+                            <span class="total">2690000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">SaaS</span>
+                            <span class="count">2</span>
+                            <span class="total">19267800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Media</span>
+                            <span class="count">2</span>
+                            <span class="total">4042749</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">4</span>
+                            <span class="total">3661295</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">2</span>
+                            <span class="total">7126680</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">News</span>
+                            <span class="count">3</span>
+                            <span class="total">1272636</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">News</span>
+                            <span class="count">4</span>
+                            <span class="total">2971147</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">5</span>
+                            <span class="total">8048125</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Social Media</span>
+                            <span class="count">5</span>
+                            <span class="total">20291979</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">7</span>
+                            <span class="total">100230000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">2200000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>6</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Gamification</span>
+                            <span class="count">1</span>
+                            <span class="total">1060000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Restaurants</span>
+                            <span class="count">2</span>
+                            <span class="total">438239</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Enterprise Software</span>
+                            <span class="count">2</span>
+                            <span class="total">730887</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Video Streaming</span>
+                            <span class="count">3</span>
+                            <span class="total">24175000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">2</span>
+                            <span class="total">2250070</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Media</span>
+                            <span class="count">2</span>
+                            <span class="total">9847269</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Security</span>
+                            <span class="count">3</span>
+                            <span class="total">10104303</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">5</span>
+                            <span class="total">14346400</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">5</span>
+                            <span class="total">8070031</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">7</span>
+                            <span class="total">344618885</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">3D</span>
+                            <span class="count">1</span>
+                            <span class="total">2200000</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>7</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Music</span>
+                            <span class="count">1</span>
+                            <span class="total">905992</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Web Development</span>
+                            <span class="count">2</span>
+                            <span class="total">19267800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health Diagnostics</span>
+                            <span class="count">2</span>
+                            <span class="total">42499283</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">3</span>
+                            <span class="total">45020000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">News</span>
+                            <span class="count">2</span>
+                            <span class="total">1214250</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Music</span>
+                            <span class="count">2</span>
+                            <span class="total">25492480</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Photography</span>
+                            <span class="count">3</span>
+                            <span class="total">167159</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Software</span>
+                            <span class="count">4</span>
+                            <span class="total">34006639</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Advertising</span>
+                            <span class="count">5</span>
+                            <span class="total">6356074</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">5</span>
+                            <span class="total">20612894</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Agriculture</span>
+                            <span class="count">1</span>
+                            <span class="total">1331591</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>8</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Internet</span>
+                            <span class="count">1</span>
+                            <span class="total">905992</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Search</span>
+                            <span class="count">2</span>
+                            <span class="total">438239</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Security</span>
+                            <span class="count">2</span>
+                            <span class="total">955000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Games</span>
+                            <span class="count">3</span>
+                            <span class="total">12148116</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">2</span>
+                            <span class="total">870000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Security</span>
+                            <span class="count">2</span>
+                            <span class="total">2349000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">3</span>
+                            <span class="total">160000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Biotechnology</span>
+                            <span class="count">4</span>
+                            <span class="total">10185324</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Clean Technology</span>
+                            <span class="count">4</span>
+                            <span class="total">20446746</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Hardware + Software</span>
+                            <span class="count">5</span>
+                            <span class="total">56225000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Health and Wellness</span>
+                            <span class="count">1</span>
+                            <span class="total">1331591</span>
+                        </td>
+                    
+                
+            </tr>
+        
+            <tr>
+                <td>9</td>
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td></td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Game</span>
+                            <span class="count">1</span>
+                            <span class="total">1060000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">PaaS</span>
+                            <span class="count">2</span>
+                            <span class="total">19267800</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">E-Commerce</span>
+                            <span class="count">2</span>
+                            <span class="total">5000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sports</span>
+                            <span class="count">2</span>
+                            <span class="total">7515795</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Analytics</span>
+                            <span class="count">2</span>
+                            <span class="total">690000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Nanotechnology</span>
+                            <span class="count">2</span>
+                            <span class="total">25786338</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Curated Web</span>
+                            <span class="count">3</span>
+                            <span class="total">5500000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Telecommunications</span>
+                            <span class="count">3</span>
+                            <span class="total">3170733</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Entertainment</span>
+                            <span class="count">3</span>
+                            <span class="total">253000000</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Developer APIs</span>
+                            <span class="count">5</span>
+                            <span class="total">116324991</span>
+                        </td>
+                    
+                
+                    
+                        <td>
+                            <span class="name">Sales and Marketing</span>
+                            <span class="count">1</span>
+                            <span class="total">113831</span>
                         </td>
                     
                 
