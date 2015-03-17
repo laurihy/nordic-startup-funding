@@ -1,0 +1,22 @@
+<div class="table-container">
+    <table cellspacing="0" cellpadding="0">
+        <tr>
+            <th></th>
+            {% for x in x_axis %}
+                <th>{{x}}</th>
+            {% endfor %}
+        </tr>
+        {% for row in row_data.values() %}
+            <tr>
+                <td>{{row['name']}}</td>
+                {% for x in x_axis %}
+                <td>
+                    {% for k, v in row['values'].get(x, {}).items() %}
+                    <span class="{{k}}">{{v}}</span>
+                    {% endfor %}
+                </td>
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</div>

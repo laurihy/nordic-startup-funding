@@ -43,6 +43,7 @@ def write_csv_dict(path, data):
         writer = csv.DictWriter(f, fieldnames=data[0].keys())
         writer.writeheader()
         for row in data:
+            print row
             writer.writerow(row)
 
 def coerce_values_to_ascii(obj):
@@ -50,7 +51,7 @@ def coerce_values_to_ascii(obj):
     for k, v in obj.items():
         if isinstance(v, unicode):
             ret[k] = v.encode('ascii', 'ignore')
-        if isinstance(v, list):
+        elif isinstance(v, list):
             ret[k] = ', '.join([i.encode('ascii', 'ignore') for i in v])
         else:
             ret[k] = v

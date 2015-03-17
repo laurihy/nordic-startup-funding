@@ -1,0 +1,26 @@
+<div class="table-container">
+    <table class="toplist" cellspacing="0" cellpadding="0">
+        <tr>
+            <th>#</th>
+            {% for x in x_axis %}
+                <th>{{x}}</th>
+            {% endfor %}
+        </tr>
+        {% for row_i in range(count) %}
+            <tr>
+                <td>{{row_i}}</td>
+                {% for x in x_axis %}
+                    {% if data.get(x) and data.get(x,{}).get('values', [])|length > row_i %}
+                        <td>
+                            <span class="name">{{data.get(x, {}).get('values',[])[row_i].get('key', 'No name').encode('ascii', 'ignore')}}</span>
+                            <span class="count">{{data.get(x, {}).get('values',[])[row_i].get('values', {}).get('count', 0)}}</span>
+                            <span class="total">{{data.get(x, {}).get('values',[])[row_i].get('values', {}).get('total', 0)}}</span>
+                        </td>
+                    {% else %}
+                        <td></td>
+                    {% endif %}
+                {% endfor %}
+            </tr>
+        {% endfor %}
+    </table>
+</div>
